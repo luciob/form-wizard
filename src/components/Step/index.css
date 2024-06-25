@@ -1,0 +1,37 @@
+.step,
+.step-inactive {
+  background-color: var(--background-light);
+  border: var(--border-sizing) solid var(--divider-color);
+  border-radius: var(--border-radius-sizing);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  margin-bottom: var(--base-sizing);
+  padding: var(--base-sizing);
+  width: 100%;
+}
+
+.step-inactive {
+  cursor: not-allowed;
+  user-select: none;
+}
+
+.step input {
+  margin: var(--base-sizing) 0 calc(var(--base-sizing) * 2);
+}
+
+.step small {
+  margin-bottom: var(--base-sizing);
+}
+
+.step .actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: var(--base-sizing);
+}
+
+.step .actions > button:not(:last-child) {
+  margin-right: var(--base-sizing);
+}

@@ -1,0 +1,8 @@
+.step .complete {
+  padding: calc(var(--base-sizing) * 4);
+}
+
+.step .complete pre,
+.step .complete pre > code {
+  background-color: var(--background-dark);
+}

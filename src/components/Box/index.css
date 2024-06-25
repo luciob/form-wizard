@@ -1,0 +1,7 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  border: var(--border-sizing) solid var(--divider-color);
+  padding: var(--base-sizing);
+  box-sizing: border-box;
+}

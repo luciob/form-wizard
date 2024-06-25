@@ -1,0 +1,13 @@
+nav {
+  align-items: center;
+  background-color: var(--background-light);
+  border-bottom: var(--border-sizing) solid var(--divider-color);
+  box-sizing: border-box;
+  display: flex;
+  min-height: calc(var(--base-sizing) * 6);
+  padding: var(--base-sizing) calc(var(--base-sizing) * 2);
+}
+
+nav h2 {
+  margin: 0;
+}

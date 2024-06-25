@@ -1,0 +1,14 @@
+.input-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: calc(var(--base-sizing) * 2);
+  width: 100%;
+}
+
+.input-wrapper .error {
+  bottom: calc(var(--base-sizing) * -2);
+  color: var(--error-color);
+  left: 0;
+  position: absolute;
+}

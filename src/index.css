@@ -1,0 +1,103 @@
+:root {
+  --anchor-color-hover: #535bf2;
+  --anchor-color: #646cff;
+  --background-dark: #2b2b2b;
+  --background-light: #3b3b3b;
+  --divider-color: #ccc;
+  --error-color: #ff5b5b;
+  --primary-text: #f0f0f0;
+
+  --base-sizing: 8px;
+  --border-sizing: 1px;
+
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: var(--primary-text);
+  background-color: var(--background-dark);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: var(--anchor-color);
+  text-decoration: inherit;
+}
+a:hover {
+  color: var(--anchor-color-hover);
+}
+
+body {
+  background-color: var(--background-dark);
+  margin: 0;
+  min-height: 100vh;
+  padding: 0;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: var(--base-sizing);
+  border: var(--border-sizing) solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--background-light);
+  color: var(--primary-text);
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:disabled {
+  cursor: not-allowed;
+}
+button:hover:not(:disabled) {
+  border-color: var(--primary-text);
+}
+button:focus,
+button:focus-visible {
+  outline: calc(var(--base-sizing) * 0.5) auto -webkit-focus-ring-color;
+}
+
+input {
+  border-radius: var(--base-sizing);
+  border: var(--border-sizing) solid var(--divider-color);
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+}
+input:focus,
+input:focus-visible {
+  outline: var(--border-sizing) auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --anchor-color: #747bff;
+    --background-light: #fff;
+    --background-dark: #f9f9f9;
+    --primary-text: #2b2b2b;
+
+    color: var(--primary-text);
+    background-color: var(--background-light);
+  }
+
+  a:hover {
+    color: var(--anchor-color);
+  }
+
+  button {
+    background-color: var(--background-dark);
+    border-color: var(--divider-color);
+  }
+}
