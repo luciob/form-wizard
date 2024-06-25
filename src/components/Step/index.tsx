@@ -36,7 +36,16 @@ const Step = ({
 
   const toggleLoading = useCallback(() => setLoading((loading) => !loading), []);
 
-  const onChange = useCallback((e: ChangeEvent<HTMLInputElement>) => setValue(e.target.value), []);
+  const onChange = useCallback(
+    (e: ChangeEvent<HTMLInputElement>) => {
+      if (error) {
+        setError("");
+      }
+
+      setValue(e.target.value);
+    },
+    [error]
+  );
 
   const onSubmit = useCallback(
     (successCallback: () => void) => {

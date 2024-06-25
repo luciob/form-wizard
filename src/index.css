@@ -46,15 +46,16 @@ h1 {
 }
 
 button {
-  border-radius: var(--base-sizing);
-  border: var(--border-sizing) solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
   background-color: var(--background-light);
+  border-color: var(--divider-color);
+  border-radius: var(--base-sizing);
+  border: var(--border-sizing) solid;
   color: var(--primary-text);
   cursor: pointer;
+  font-family: inherit;
+  font-size: 1em;
+  font-weight: 500;
+  padding: 0.6em 1.2em;
   transition: border-color 0.25s;
 }
 button:disabled {
